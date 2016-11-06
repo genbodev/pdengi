@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="54dace4c-0097-423f-9145-ac85322b4f1f" name="pdengi" url="http://pdengi">
+        <fileTransfer port="0" mountedRoot="C:\OpenServer\domains\pdengi" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
