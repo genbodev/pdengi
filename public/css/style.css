@@ -1,0 +1,126 @@
+.user-wrapper {
+    display: flex;
+}
+
+.user-data {
+    width: 290px;
+}
+
+.user-data > div {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+}
+
+.user-data > div > span {
+    margin-right: 14px;
+}
+
+.button-wrapper {
+    width: 330px;
+    background-color: rgba(196, 196, 196, 0.28);
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 35px 5px 35px;
+    flex-direction: column;
+    height: 200px;
+}
+
+.select-wrapper {
+    height: 70px;
+    width: 100%;
+    background-color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+
+.input-text {
+    width: 100%;
+    color: #bfb7b7;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-size:15px;
+}
+
+.input-wrapper {
+    border: none;
+    color: #5cb85c;
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #333;
+    text-align: center;
+}
+
+.input-wrapper:focus {
+    outline: none !important;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.input-text {
+    font-size:15px;
+}
+
+.comment {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 20px;
+    position: relative;
+    word-wrap: break-word;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.comment:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: rgba(0, 0, 0, 0.2);
+}
+
+.comment > p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.users-wrapper {
+    text-align: center;
+    display: none;
+}
+
+.sum-wrapper {
+    text-align: center;
+}
+
+.users-wrapper > div {
+    margin-bottom: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.users-wrapper > div:hover {
+    text-decoration: underline
+}
