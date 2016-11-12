@@ -45,7 +45,7 @@
     color: #bfb7b7;
     text-align: center;
     border-bottom: 1px solid #fff;
-    font-size:15px;
+    font-size: 15px;
 }
 
 .input-wrapper {
@@ -65,12 +65,13 @@
 button:active, button:focus {
     outline: none !important;
 }
+
 button::-moz-focus-inner {
     border: 0 !important;
 }
 
 .input-text {
-    font-size:15px;
+    font-size: 15px;
 }
 
 .comment {
@@ -86,6 +87,8 @@ button::-moz-focus-inner {
     margin-left: 20px;
     font-style: italic;
     font-size: 16px;
+    height: 200px;
+    overflow: auto;
 }
 
 .comment:after {
@@ -123,4 +126,8 @@ button::-moz-focus-inner {
 
 .users-wrapper > div:hover {
     text-decoration: underline
+}
+
+.user-name {
+    font-weight: bold;
 }

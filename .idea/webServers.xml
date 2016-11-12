@@ -2,8 +2,13 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="54dace4c-0097-423f-9145-ac85322b4f1f" name="pdengi" url="http://pdengi">
-        <fileTransfer port="0" mountedRoot="C:\OpenServer\domains\pdengi" accessType="MOUNT" />
+      <webServer id="54dace4c-0097-423f-9145-ac85322b4f1f" name="pdengi" url="http://transaction.genbo.ru/">
+        <fileTransfer host="sylvia.timeweb.ru" port="21" rootFolder="/transaction/public_html" password="dfcedf92df92dfd0dfdcdfc3dffadffedfffdfd3dfcddfda" username="cq29882">
+          <advancedOptions>
+            <advancedOptions passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
       </webServer>
     </option>
   </component>
