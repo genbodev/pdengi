@@ -24,3 +24,8 @@ Route::get('/', [
 	'as' => 'balance',
 	'uses' => 'BalanceController@index'
 ]);
+
+Route::post('/', [
+	'as' => 'moneyOrder',
+	'uses' => 'BalanceController@moneyOrder'
+]);

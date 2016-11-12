@@ -5,16 +5,21 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 
 class VerifyCsrfToken extends BaseVerifier {
 
-	/**
-	 * Handle an incoming request.
-	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @param  \Closure  $next
-	 * @return mixed
-	 */
-	public function handle($request, Closure $next)
-	{
-		return parent::handle($request, $next);
-	}
+  /**
+   * Handle an incoming request.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @param  \Closure $next
+   * @return mixed
+   */
+  public function handle($request, Closure $next) {
+    return parent::handle($request, $next);
+  }
+
+  protected function tokenMath($request) {
+
+    $token = $request->ajax() ? $request->header('X-CSRF-Token') : $request->input('token');
+    return $request->session()->token() == $token;
+  }
 
 }
