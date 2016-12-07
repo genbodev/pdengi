@@ -30,7 +30,6 @@ class User extends Model {
       ->orderBy('users.id', 'asc')
       ->get();
 
-
     return $users;
   }
 
